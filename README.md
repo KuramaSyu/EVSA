@@ -62,7 +62,8 @@ sword = SwordStragety()
 c.weapon = sword
 c.on_attack_click()  # Schwert geschwungen
 bow = BowStragety()
-c.weapon = bow  # Pfeil abgeschossen
+c.weapon = bow  
+c.on_attack_click()  # Pfeil abgeschossen
 ```
 Formal würde das ganze wie folgt aussehen: 
 `Context` wäre der `Character`, `Stragety` wäre `AttackStragety`, und ConcreteStragetyA .. ConcreteStragetyC wären die jeweiligen Waffenimplementierungen. 
@@ -98,5 +99,7 @@ classDiagram
     Strategy <|.. ConcreteStrategyC : implements
 ```
 
+
+### Observer Pattern
 
 
