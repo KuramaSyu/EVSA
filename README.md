@@ -586,7 +586,7 @@ ar.calculate_damage()  # 15.3125
 ar.execute() # Salve abgefeuert, 15.3125 Schaden
 
 # der Spieler sammelt FireTwice auf
-fire_twice_even_better_ar = FireTwiceMultiplier(inner=even_better_ar)
+fire_twice_even_better_ar = FireTwiceDecorator(inner=even_better_ar)
 ar.calculate_damage()  # 15.3125
 ar.execute() # Salve abgefeuert, 15.3125 Schaden
              # Salve abgefeuert, 15.3125 Schaden
